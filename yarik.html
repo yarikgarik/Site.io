@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Иванов - Ярик Гаик</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/yarik.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        /* Анимации */
+        @keyframes pixel-glow {
+            0% { text-shadow: 0 0 5px #00ff00; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+            100% { text-shadow: 0 0 5px #00ff00; }
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes button-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @keyframes cs2-stat-glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .pixel-title {
+            animation: pixel-glow 2s infinite;
+        }
+
+        .pixel-nav a:hover {
+            animation: button-bounce 0.4s ease;
+            color: #00ff00 !important;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typewriter 3s steps(40) 1s 1 normal both;
+        }
+
+        .cs2-stat:hover {
+            animation: cs2-stat-glitch 0.4s infinite;
+            background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+        }
+
+        .pixel-avatar {
+            animation: spin 8s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .pixel-facts li {
+            opacity: 0;
+            animation: fade-in 0.5s ease forwards;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .cs2-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: #000;
+            border: 3px solid #00ff00;
+        }
+
+        .cs2-stat {
+            padding: 15px;
+            border: 2px solid #00ff00;
+            position: relative;
+            transition: 0.3s all;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+    </style>
+</head>
+<body class="yarik-page">
+    <header class="pixel-header">
+        <div class="pixel-avatar"></div>
+        <h1 class="pixel-title">Ярик Гарик</h1>
+        <p class="pixel-subtitle">Легендарные истории</p>
+        <nav class="pixel-nav">
+            <a href="index.html">Главная</a>
+            <a href="yarik.html" class="active">Ярик Гарик</a>
+            <a href="geometrydash.html">GD</a>
+            <a href="tiktok.html">TikTok</a>
+            <a href="yandexgames.html">Я.Игры</a>
+        </nav>
+    </header>
+
+    <main class="pixel-main">
+        <section class="pixel-story">
+            <h2 class="pixel-h2 typewriter">История происхождения</h2>
+            <div class="pixel-content">
+                <div class="pixel-text">
+                    <p>Ярик Гаик - это легендарный персонаж, созданный мной в 2019 году...</p>
+                    <div class="pixel-facts">
+                        <h3>Интересные факты:</h3>
+                        <ul>
+                            <li style="animation-delay: 0.2s">Первое появление: 12 марта 2015</li>
+                            <li style="animation-delay: 0.4s">Любимое оружие: Банан</li>
+                            <li style="animation-delay: 0.6s">Главный враг: Доктор Зло</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pixel-image">
+                    <div class="pixel-buttons">
+                        <button class="pixel-btn" onmouseover="this.style.transform='scale(1.1)'" 
+                                onmouseout="this.style.transform='scale(1)'">Истории</button>
+                        <button class="pixel-btn" onmouseover="this.style.transform='scale(1.1)'" 
+                                onmouseout="this.style.transform='scale(1)'">Галерея</button>
+                        <button class="pixel-btn" onmouseover="this.style.transform='scale(1.1)'" 
+                                onmouseout="this.style.transform='scale(1)'">Видео</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs2-stats">
+            <h2 class="pixel-h2" style="color: #00ff00">Статистика в CS2</h2>
+            <div class="cs2-stats-grid">
+                <div class="cs2-stat">
+                    <h3>Убийства</h3>
+                    <div class="stat-value">15,432</div>
+                    <div class="stat-bar" style="height: 5px; background: #00ff00; width: 80%"></div>
+                </div>
+                <div class="cs2-stat">
+                    <h3>Точность</h3>
+                    <div class="stat-value">68.9%</div>
+                    <div class="stat-bar" style="height: 5px; background: #00ff00; width: 69%"></div>
+                </div>
+                <div class="cs2-stat">
+                    <h3>Победы</h3>
+                    <div class="stat-value">1,234</div>
+                    <div class="stat-bar" style="height: 5px; background: #00ff00; width: 65%"></div>
+                </div>
+                <div class="cs2-stat">
+                    <h3>Хедшоты</h3>
+                    <div class="stat-value">42%</div>
+                    <div class="stat-bar" style="height: 5px; background: #00ff00; width: 42%"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pixel-footer" style="animation: pixel-glow 2s infinite">
+        <p>© 2023 Ярик Гаик - Все истории вымышлены</p>
+    </footer>
+</body>
+</html>

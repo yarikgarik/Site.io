@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Очистка сайта от стилей</title>
+</head>
+<body>
+    <h1>Страница очистки сайта от стилей</h1>
+    <p>Здесь представлены элементы страницы без оформления и дополнительного функционала.</p>
+    
+    <header>
+        <h1>YarikGarik</h1>
+        <p>Контентмейкер · Геймер · Легенда</p>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="yarik.html">О Ярике</a>
+            <a href="geometrydash.html">GD</a>
+            <a href="tiktok.html">TikTok</a>
+            <a href="yandexgames.html">Игры</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Кто такой YarikGarik?</h2>
+            <p>Приветствую на официальном сайте Ярослава Гаврилова, известного как YarikGarik!</p>
+            <ul>
+                <li>Создание уникального контента</li>
+                <li>Профессиональная игра в Geometry Dash</li>
+                <li>Развитие сообщества в TikTok</li>
+                <li>Разработка собственных игровых проектов</li>
+                <li>Организация турниров и мероприятий</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <div>
+                <h3>Geometry Dash</h3>
+                <span>95%</span>
+                <p>Более 50 пройденных демонов, включая Extreme</p>
+            </div>
+            <div>
+                <h3>Создание контента</h3>
+                <span>90%</span>
+                <p>Видео, стримы, мемы и образовательный контент</p>
+            </div>
+            <div>
+                <h3>Разработка игр</h3>
+                <span>75%</span>
+                <p>Опыт работы с Unity и Яндекс.Играми</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Последние проекты</h2>
+            <div>
+                <h3>GD Марафон</h3>
+                <p>24-часовой стрим с прохождением сложнейших уровней</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div>
+                <h3>Yarik Adventure</h3>
+                <p>Моя собственная игра в стиле платформера</p>
+                <a href="#">Играть</a>
+            </div>
+            <div>
+                <h3>TikTok Серия</h3>
+                <p>"Как пройти демона за 1 день" — вирусная серия</p>
+                <a href="#">Смотреть</a>
+            </div>
+        </section>
+        <label for="games">Лучшие игры:</label>
+        <select id="games" name="top_games" multiple size="3">
+            <option value="gd" selected>Geometry Dash</option>
+            <option value="minecraft">Minecraft</option>
+            <option value="cs">Counter-Strike</option>
+            <option value="dota" disabled>Dota 2</option>
+        </select>
+        <button type="submit">Отправить</button>
+<button type="reset">Сбросить</button>
+<button type="button" disabled>Неактивная</button>
+<button type="button">
+    <img src="i.jpg" alt="Иконка" width="20">
+    Кнопка с иконкой
+</button>
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Сообщение</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-twitch"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+        <p>© 2023 YarikGarik. Все права защищены.</p>
+    </footer>
+</body>
+</html>

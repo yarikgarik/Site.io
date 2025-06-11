@@ -1,0 +1,58 @@
+/* Ретро-стиль с пиксельной графикой */
+.yarik-page {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pixel-header {
+    background: #5a3d8a;
+    border-bottom: 4px solid #ff00ff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 0 #3d2968;
+}
+
+.pixel-title {
+    color: #ffcc00;
+    text-shadow: 4px 4px 0 #ff00ff;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.pixel-nav a {
+    color: white;
+    background: #3d2968;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 2px solid #ffcc00;
+    text-decoration: none;
+}
+
+    .pixel-nav a.active {
+        background: #ff00ff;
+        color: #ffcc00;
+    }
+
+.pixel-story {
+    background: rgba(0, 0, 0, 0.7);
+    border: 4px dashed #ffcc00;
+    margin: 20px;
+    padding: 20px;
+}
+
+.pixel-btn {
+    background: #ff00ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #3d2968;
+}
+
+    .pixel-btn:hover {
+        background: #ffcc00;
+        color: #5a3d8a;
+    }
